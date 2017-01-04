@@ -1,0 +1,8 @@
+name = Chars
+description = Chars core framework
+
+core = 7.x
+package = Narriax Chars
+configure = admin/config/chars
+
+files[] = chars.module

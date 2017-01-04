@@ -1,0 +1,11 @@
+<?php
+
+// include hooks
+
+$mdir = drupal_get_path('module', 'chars');
+$hook_files = scandir (DRUPAL_ROOT.'/'.$mdir.'/hooks');
+foreach ($hook_files as $f) {
+	if (substr($f,-4) === '.inc') include(DRUPAL_ROOT.'/'.$mdir.'/hooks/'.$f);	
+}
+
+
