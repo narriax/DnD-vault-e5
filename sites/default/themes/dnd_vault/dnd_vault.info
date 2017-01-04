@@ -3,6 +3,7 @@ description = Based on Business Responsive Theme by <a href="http://www.zymphoni
 core = 7.x
 base theme = business_responsive_theme
 
+regions[header]         = Header
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[slideshow]      = Slideshow
