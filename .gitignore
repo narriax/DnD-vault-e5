@@ -1,0 +1,21 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore the Drupal core and 3rd party content
+/*/
+/*.*
+!.gitignore
+
+# Track the custom content in sites/default
+!/sites/
+/sites/*
+!/sites/default/
+/sites/README.txt
+/sites/example.sites.php
+/sites/all/*
+/sites/default/default.settings.php
+
