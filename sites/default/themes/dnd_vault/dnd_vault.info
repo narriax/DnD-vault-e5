@@ -1,0 +1,22 @@
+name = DnD Vault
+description = Based on Business Responsive Theme by <a href="http://www.zymphonies.com">Zymphonies</a> 
+core = 7.x
+base theme = business_responsive_theme
+
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[slideshow]      = Slideshow
+regions[front_welcome]  = Front Welcome
+regions[top_first]      = First top
+regions[top_second]     = Second top
+regions[top_third]      = Third top
+regions[content]        = Content
+regions[content_top]    = Content Top
+regions[footer]         = Footer
+regions[footer_first]   = First Bottom
+regions[footer_second]  = Second Bottom
+regions[footer_third]   = Third Bottom
+
+stylesheets[all][] = colors.css
+stylesheets[all][] = layout.css
+

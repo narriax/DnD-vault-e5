@@ -1,0 +1,106 @@
+/*		PAGE		*/
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: "Open Sans";
+	font-size: 0.9em;
+}
+html, body {
+	height: 100%;
+}
+#container {
+	min-height: 75%;
+}
+b, h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6,
+#main-menu, fieldset legend {
+	font-family: "Vollkorn";
+	text-shadow: none;
+}
+
+
+/*		HEADER		*/
+header #logo img {
+	height: 45px;
+	margin-left: 2em;
+}
+#main-menu a,
+#main-menu li li a {
+	font-weight: 300;
+	text-transform: none;
+	word-spacing: 4px;
+	padding: 10px 20px;	
+}
+#main-menu a {
+	font-size: 1em;
+}
+#main-menu li li a {
+	font-size: 0.9em;
+}
+
+
+
+#container {
+	/*position: absolute;*/
+}
+#block-system-user-menu {
+	font-size: 0.8em;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+#block-system-user-menu h2 {
+	display: none;
+}
+#block-system-user-menu li {
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+
+/*		FOOTER		*/
+.footer_credit .copyright,
+.footer_credit .credits {
+	display: none;
+}
+.footer_credit .site-copyright {
+	font-weight: bold;
+	word-spacing: 4px;
+}
+.footer_credit .credits-list {
+	float: right;
+}
+
+
+/*		FORMS		*/
+fieldset {
+	position: relative;
+}
+fieldset .fieldset-wrapper {
+	margin-top: 0px;
+}
+fieldset legend {
+	margin: 1px;
+	position: relative;
+	min-height: 2em;
+}
+fieldset legend span {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+fieldset fieldset .fieldset-wrapper {
+	margin-top: 16px;
+}
+fieldset fieldset legend {
+	position: absolute;
+	top: -12px;
+}
+
+
+/*		TABLES		*/
+table {
+	font-size: 0.9em;
+}

@@ -1,0 +1,115 @@
+body {
+	background: #fff;
+	color: #515F5C;
+	background: url('images/map.jpg');
+	background-size: 150%;
+	color: #543;
+}
+header {
+	background: linear-gradient(rgba(0,0,0,0.85), rgba(65,25,0,0.4));
+}
+header #site-title,
+header #site-title a {
+	color: #4ab785;
+}
+
+a {
+	color: #06985F;
+}
+a:hover {
+	color: #08DD47;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	color: #642;
+}
+
+blockquote, q {
+	border-color: rgb(226, 220, 220);
+	background: rgb(250, 247, 247) url(images/quote.png) no-repeat;
+}
+
+#site-description {
+	color: rgb(148, 146, 146);
+}
+
+#main-menu {
+	border-bottom: 2px solid #0a0;
+	opacity: 0.9;
+}
+#main-menu,
+fieldset legend {
+	background: none repeat scroll 0 0 #362E2A;	
+	background-image: linear-gradient(#362E2A, #000);	
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.4);	
+}
+#main-menu,
+fieldset legend,
+#main-menu a {
+	color: #bda06e;
+}
+fieldset legend {
+	border: 2px solid #362E2A;
+	border-bottom: 2px solid #8c5a04;
+}
+fieldset fieldset legend {
+	background: none;
+	border: 0px;
+	box-shadow: none;
+	color: #362E2A;
+}
+
+#main-menu li a.active {
+	background: none repeat scroll 0 0 #0E6946;
+	background-image: linear-gradient(#0E6946, #044436);
+}
+#main-menu li a:hover {
+	background: none repeat scroll 0 0 #0E6946;
+	background-image: linear-gradient(#0E6946, #0a0);
+}
+#main-menu li li a {
+	background-image: linear-gradient(#000, #262220);
+}
+#main-menu li li a.active {
+	background-image: linear-gradient(#262220, #168469);
+}
+
+ul li {
+	background-image: url("images/marker.png");
+}
+.footer_credit ul li {
+	background-image: url("images/marker_gray.png");
+}
+
+#footer {
+	background: linear-gradient(rgba(65,25,0,0.4), rgba(0,0,0,0.85));
+	color: black;
+}
+.footer_credit {
+	background: none;
+	color: black;
+}
+
+
+
+table, tr, td {
+	background: #fff;
+	color: #543;
+}
+tr.even, tr.even td {
+	background: #eed;
+}
+th {
+	background: #d8d2c2;
+}
+
+.mod {
+	font-weight: bold;
+}
+.goodmod {
+	color: green;
+}
+.badmod {
+	color: maroon;
+}
+
