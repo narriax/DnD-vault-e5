@@ -11,6 +11,7 @@ sites/*/private
 !.gitignore
 
 # Track the custom content in sites/default
+!/_db_dumps/
 !/sites/
 /sites/*
 !/sites/default/

@@ -1,0 +1,30 @@
+<?php
+
+class CharWorld {
+
+
+
+	public static function worldExists($name) {
+		$q = db_select ('chars_worlds', 'w');
+		$q -> fields ('w', array('id'))
+		   -> condition ('w.name', $name)
+		   -> range (0,1);
+		$worlds = $q->execute()->fetchAllAssoc('id');
+		return (count($worlds) > 0);
+	}
+
+	public static function getWorlds () {
+		$q = db_select ('chars_worlds', 'w');
+		$q -> fields ('w', array());
+		$worlds = $q->execute()->fetchAllAssoc('id');
+		return $worlds;
+	}
+	
+	public static function addWorld ($name) {
+		$q = db_insert('chars_worlds');
+		$q -> fields (array('name' => $name));
+		$newid = $q->execute();
+		return $newid;
+	}
+}
+
