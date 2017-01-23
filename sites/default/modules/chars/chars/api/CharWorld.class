@@ -12,6 +12,14 @@ class CharWorld {
 		$worlds = $q->execute()->fetchAllAssoc('id');
 		return (count($worlds) > 0);
 	}
+	public static function universeExists($name) {
+		$q = db_select ('chars_world_universe', 'wu');
+		$q -> fields ('wu', array('id'))
+		   -> condition ('wu.name', $name)
+		   -> range (0,1);		
+		$worlds = $q->execute()->fetchAllAssoc('id');
+		return (count($worlds) > 0);
+	}
 
 	public static function getWorlds () {
 		$q = db_select ('chars_worlds', 'w');
@@ -19,12 +27,28 @@ class CharWorld {
 		$worlds = $q->execute()->fetchAllAssoc('id');
 		return $worlds;
 	}
+	public static function getUniverses () {
+		$q = db_select ('chars_world_universe', 'wu');
+		$q -> fields ('wu', array());
+		$worlds = $q->execute()->fetchAllKeyed(0,1);
+		return $worlds;
+	}
 	
-	public static function addWorld ($name) {
+	public static function addWorld ($name, $universe_id, $private = 0) {
+		global $user;
 		$q = db_insert('chars_worlds');
-		$q -> fields (array('name' => $name));
+		$q -> fields (array('name' => $name,
+							'owner_id' => $user->uid, 
+							'universe_id' => $universe_id, 
+							'privte' => $private));
 		$newid = $q->execute();
 		return $newid;
 	}
+	public static function addUniverse ($name) {
+		$q = db_insert('chars_world_universe');
+		$q -> fields (array('name' => $name));
+		$newid = $q->execute();
+		return $newid;
+	}	
 }
 
